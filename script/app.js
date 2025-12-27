@@ -121,6 +121,7 @@ submitBtn.addEventListener("click", e => {
   e.preventDefault()
   if (submitBtn.disabled) return
 
+
   inputs.forEach(input => {
     input.value = ""
     input.style.borderColor = ""
@@ -130,4 +131,17 @@ submitBtn.addEventListener("click", e => {
   submitBtn.classList.remove("auth__submit--active")
 
   successMsg.classList.add("account__created--active")
+
+
+  items.forEach(item => {
+    const textEl = item.querySelector(".password-rules__text")
+    const svgPath = item.querySelector("svg path")
+
+    if (textEl) textEl.style.color = "" 
+    if (svgPath) {
+      svgPath.setAttribute("stroke", "#465FF1") 
+      svgPath.setAttribute("stroke-opacity", "0.25") 
+    }
+  })
 })
+
