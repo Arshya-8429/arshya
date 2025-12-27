@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Figtree-Black";
+    src: url(../fonts/Figtree/static/Figtree-Black.ttf);
+}
+@font-face {
+    font-family: "Figtree-Regular";
+    src: url(../fonts/Figtree/static/Figtree-Regular.ttf);
+}
+@font-face {
+    font-family: "Figtree-Medium";
+    src: url(../fonts/Figtree/static/Figtree-Medium.ttf);
+}
+@font-face {
+    font-family: "Figtree-Bold";
+    src: url(../fonts/Figtree/static/Figtree-Bold.ttf);
+}
+@font-face {
+    font-family: "Figtree-SemiBold";
+    src: url(../fonts/Figtree/static/Figtree-SemiBold.ttf);
+}

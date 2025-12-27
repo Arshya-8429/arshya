@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/app.css">
+</head>
+<body>
+    <div class="container auth">
+        <div class="auth__left">
+            <image src="./imge/d71a1f0106b82a54e324dce1346501dcbea0e315.jpg" alt="Background Image" class="auth__background-image">
+            <div class="auth__intro">
+                <h3 class="auth__title">Welcome to SimpleFlow</h3>
+                <p class="auth__subtitle">Your Gateway to Effortless Management.</p>
+            </div>
+
+            <div class="auth__feature">
+                <h3 class="auth__feature-title">Seamless Collaboration</h3>
+                <p class="auth__feature-text">
+                    Effortlessly work together with your team in real-time.
+                </p>
+            </div>
+        </div>
+
+        <div class="auth__right">
+            <div class="auth__brand">
+                <svg class="auth__logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_8_113)"><rect width="24" height="24" rx="4" fill="#ECF0FF"/><path d="M4.65755 21.8846C3.22726 22.7104 1.71662 23.3295 0.125632 23.7422C-1.48221 24.1256 -3.05756 24.2956 -4.60041 24.2523C-6.11407 24.1922 -7.48856 23.9349 -8.72388 23.4806C-9.97605 22.997 -10.9616 22.3011 -11.6805 21.3929L-4.91345 14.5086C-4.22943 15.0867 -3.41466 15.4531 -2.46915 15.6077C-1.54048 15.7332 -0.548482 15.5302 0.506856 14.9987C1.34101 14.556 1.92976 13.9242 2.2731 13.1033C2.64563 12.2655 2.61281 11.4671 2.17464 10.7082C1.88815 10.212 1.42878 9.8545 0.796525 9.63574C0.17661 9.37094 -0.58639 9.36389 -1.49248 9.61458L-6.77235 11.0867C-8.58452 11.5881 -10.3042 11.7441 -11.9313 11.5549C-13.5292 11.3488 -14.9886 10.8097 -16.3093 9.93767C-17.6009 9.04876 -18.6849 7.84538 -19.5612 6.32752C-21.2971 3.321 -21.6528 0.412855 -20.6285 -2.39692C-19.5919 -5.25274 -17.2638 -7.72551 -13.6443 -9.81523C-11.7178 -10.9275 -9.8816 -11.6568 -8.13563 -12.0032C-6.36047 -12.3665 -4.63571 -12.3115 -2.96134 -11.8382C-1.27464 -11.4109 0.41614 -10.5384 2.11099 -9.22066L-4.56175 -2.27406C-5.04475 -2.77359 -5.76126 -3.1383 -6.7113 -3.36818C-7.63214 -3.61492 -8.60338 -3.44337 -9.62501 -2.85353C-10.6175 -2.28054 -11.2646 -1.61503 -11.5664 -0.856989C-11.839 -0.115799 -11.731 0.678044 -11.2422 1.52454C-10.9389 2.04995 -10.4503 2.39059 -9.77655 2.54645C-9.11962 2.67313 -8.32352 2.60269 -7.38825 2.33515L-2.06459 0.837763C0.607624 0.0733482 3.09764 0.173048 5.40547 1.13686C7.69645 2.07149 9.47391 3.63341 10.7379 5.82262C11.9007 7.8367 12.4195 9.81393 12.2944 11.7543C12.1984 13.6778 11.5 15.5016 10.1992 17.2257C8.89829 18.9497 7.05109 20.5027 4.65755 21.8846Z" fill="#465FF1" fill-opacity="0.5"/></g><defs><clipPath id="clip0_8_113"><rect width="24" height="24" rx="4" fill="white"/></clipPath></defs>
+                </svg>
+                <h5 class="auth__logo-text">SimpleFlow</h5>
+            </div>
+
+            <div class="auth__tabs">
+                <button class="auth__tab auth__tab--active">Sign Up</button>
+                <button class="auth__tab">Sign in</button>
+            </div>
+
+            <form class="auth__form">
+                <label class="auth__label">Username 
+                    <input class="auth__input" id="Username" placeholder="Enter Your Username">
+                    <P class="auth__input-hint">Username must be between 3 and 15 characters</P>
+                </label>                
+                <label class="auth__label">Full Name 
+                    <input class="auth__input" id="Fullname" type="text" placeholder="Enter Your Name">
+               </label>                
+
+                <label class="auth__label">Email 
+                    <input class="auth__input" id="email" type="email" placeholder="Enter Your Email Address">
+               </label>                
+
+                <label class="auth__label"> 
+                    <div class="warpeer--auth__label"><p class="auth__label--Password"> Password</p> <a href="" class="forget--password">Forgot Password?</a></div>
+                    <input class="auth__input" id="password" type="password" placeholder="Enter Password">
+               </label>                
+            </form>
+
+            <ul class="password-rules">
+                <li class="password-rules__item">
+                    <svg class="password-rules__icon"width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="#465FF1" stroke-opacity="0.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p class="password-rules__text">Password Strength : Weak</p>
+                </li>
+                <li class="password-rules__item">
+                    <svg class="password-rules__icon"width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="#465FF1" stroke-opacity="0.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                    <p class="password-rules__text">
+                        Cannot contain your name or email address
+                    </p>
+                </li>
+                <li class="password-rules__item">
+                    <svg class="password-rules__icon"width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="#465FF1" stroke-opacity="0.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                    <p class="password-rules__text">At least 8 characters</p>
+                </li>
+                <li class="password-rules__item">
+                    <svg class="password-rules__icon"width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="#465FF1" stroke-opacity="0.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                    <p class="password-rules__text">Contains a number or symbol</p>
+                </li>
+            </ul>
+
+            <button class="auth__submit">Create Account</button>
+            <p class="account__created">Account Created Successfully!</p>
+            <p class="auth__terms">
+                By signing up to create an account I accept Company’s 
+                <span>Terms of use & Privacy Policy.</span>
+            </p>
+        </div>
+        
+    </div>
+    <script src="./script/app.js" ></script>
+    
+</body>
+</html>
