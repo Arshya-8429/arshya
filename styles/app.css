@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "YekanBakh-Bold";
+    src: url("../font/YekanBakh-Bold.woff");
+}
+@font-face {
+    font-family: "YekanBakh-Heavy";
+    src: url("../font/YekanBakh-Heavy.woff");
+}
+@font-face {
+    font-family: "YekanBakh-Medium";
+    src: url("../font/YekanBakh-Medium.woff");
+}
+@font-face {
+    font-family: "YekanBakh-Regular";
+    src: url("../font/YekanBakh-Regular.woff");
+}
+/* reset css */
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* start  */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    font-family: "YekanBakh-Regular";
+
+	line-height: 1.5;
+
+    
+}
+
+.card{
+	width: 592px;
+	height: 424px;
+	background-image: url("../images/card.png");
+	position: relative;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.card:hover .card-warrper{
+	top: 20px;
+	left: 20px;
+}
+
+.card:hover .card-text{
+	bottom: 0;
+}
+
+
+
+/* card-icons */
+.card-warrper{
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	gap: 16px;
+
+	position: absolute;
+	left: 20px;
+	top: -80px;
+	transition: all ease-in-out 180ms;
+
+
+}
+.card-message{
+	width: 80px;
+	height: 48px;
+	color: #fff;
+	background-color: #1D2939;
+	border-radius: 50px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+
+    font-family: "YekanBakh-Bold";
+	
+}
+.card-heart{
+	width: 48px;
+	height: 48px;
+	color: #fff;
+	background-color: #C9184A;
+	border-radius: 50px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+
+}
+.card-icon{
+
+}
+
+/* card-text */
+.card-text{
+	color: #fff;
+	width: 592px;
+	height: 142px;
+	background: linear-gradient(180deg, rgba( 0, 0, 0, 0.00) 0% , #000 100%);
+	padding: 36px 24px 24px;
+	
+	position: absolute;
+	bottom: -142px;
+	left: 0;
+	right: 0;
+
+	transition: all ease-in-out 180ms;
+
+	/* visibility: hidden; */
+}
+.card-title{
+	width: 544px;
+	height: 36px;
+	font-size: 24px;
+	/* padding-top: 36px; */
+
+}
+.card-messages{
+		width: 544px;
+		height: 30px;
+		font-size: 20px;
+		padding-top: 16px;
+}
